@@ -2,7 +2,7 @@
 #include <malloc.h>
 using namespace std;
 
-void nhapmang(int *&a,int &n){
+void nhapMang(int *&a,int &n){
 	do{
 		cout<<"Nhap n: ";
 		cin>>n;
@@ -16,12 +16,12 @@ void nhapmang(int *&a,int &n){
 		cin>>a[i];
 	}
 }
-void xuatmang(int *a,int n){
+void xuatMang(int *a,int n){
 	for(int i=0;i<n;i++){
 		cout<<"\t"<<a[i];
 	}
 }
-void demmax(int *a,int n){//dem so luong cac so bang so lon nhat
+void demMax(int *a,int n){//dem so luong cac so bang so lon nhat
 	int max = a[0];
 	for(int i=1;i<n;i++){
 		if(a[i]>max){
@@ -36,7 +36,7 @@ void demmax(int *a,int n){//dem so luong cac so bang so lon nhat
 	}
 	cout<<"\nCo "<<dem <<" so bang max ";
 }
-void tinhtong(int *a,int n){//tinh tong cac so le va trung binh cong so chan
+void tinhTong(int *a,int n){//tinh tong cac so le va trung binh cong so chan
 	int tongle=0,tongchan=0,dem=0;
 	for(int i=0;i<n;i++){
 		if(a[i]%2==0){
@@ -55,7 +55,7 @@ void tinhtong(int *a,int n){//tinh tong cac so le va trung binh cong so chan
 		cout<<"\nTrung binh cong cac so chan = "<<(float)tongchan/dem;
 	}
 }
-void tinhtbc(int *a,int n){//tinh trung binh cong cac so thuoc doan [20,200]
+void tinhTbc(int *a,int n){//tinh trung binh cong cac so thuoc doan [20,200]
 	int dem = 0,tong = 0;
 	for(int i=0;i<n;i++){
 		if(a[i]>=20&&a[i]<=200){
@@ -70,7 +70,7 @@ void tinhtbc(int *a,int n){//tinh trung binh cong cac so thuoc doan [20,200]
 		cout<<"\nTrung binh cong cac so trong khoang [20;200] = "<<(float)tong/dem;
 	}
 }
-void sapxep(int *a,int n){
+void sapXep(int *a,int n){
 	for(int i=0; i<n-1; i++)
     {
         for(int j=i+1; j<n; j++)
